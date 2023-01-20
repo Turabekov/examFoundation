@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FFFFFF;
+    overflow: hidden;
+    background-color: #1B1D1E;
+}
+
+.wrapper {
+    max-width: 1980px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.right_side {
+    max-width: 818px;
+    width: 100%;
+    padding: 126px 72px 72px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.login_form {
+    max-width: 646px;
+    width: 100%;
+    padding: 40px 32px 40px 32px;
+    background: rgba(255, 255, 255, 0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    z-index: 10;
+}
+
+.login_title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.login-input_body {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login-input_title {
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.login-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 11px 20px;
+    gap: 10px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(11px);
+    border-radius: 8px;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.login-input::placeholder {
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    width: 100%;
+    padding: 12px 36px 12px 12px;
+    box-sizing: border-box;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 48%;
+    right: 4%;
+    cursor: pointer;
+    color: lightgray;
+}
+
+.login_btn {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90.32deg, #4D7FDC -11.98%, #816DD4 40.34%, #C363CE 76.46%, #F5D5EE 105.74%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.left_side {
+    max-width: 1102px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media (max-width:640px) {
+    .left_side {
+        display: none;
+    }
+
+    .right_side {
+        width: 100%;
+        padding: 63px 36px 36px 50px;
+    }
+}
+
+.ellipse {
+    position: absolute;
+    z-index: 1;
+    width: 712px;
+    height: 712px;
+    left: 750px;
+    top: 64px;
+    background: linear-gradient(137.31deg, #4C1868 -2.83%, rgba(197, 170, 211, 0) 109.36%);
+    filter: blur(100px);
+}
+
+.idea {
+    position: absolute;
+    top: 218px;
+    left: 318px;
+    z-index: 8;
+}
+
+.idea_text {
+    position: absolute;
+    top: 40px;
+    left: 83.41px;
+
+}
+
+.cosmonaft {
+    position: absolute;
+    height: 822px;
+    left: 389px;
+    top: 258px;
+    z-index: 8;
+}
+
+/* ===Contacts page======================================================== */
+.ellipse-2 {
+    position: absolute;
+    left: 468px;
+    top: 908px;
+}
+
+.login-input_phone {
+    padding-left: 95px;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.phone_code {
+    position: absolute;
+    z-index: 49;
+    top: 35px;
+    left: 20px;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.clearInputs {
+    margin-left: auto;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5D7ADA;
+}
+.left_side {
+    max-width: 1102px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contacts {
+    width: 100%;
+    padding-top: 64px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    opacity: 0;
+
+}
+
+.contacts_inner {
+    position: relative;
+    z-index: 99;
+    max-width: 943px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+}
+
+.contact_owner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 33px 28px;
+    gap: 10px;
+    background: #252728;
+    z-index: 77;
+}
+
+.contacts_table {
+    max-width: 943px;
+    width: 100%;
+    margin: 0;
+    
+}
+
+
+.table_row {
+    background: linear-gradient(0deg, #252728, #252728), #252728;
+    border-width: 0px 1px 1px 0px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+.table_elem {
+    padding: 10px;
+    background: linear-gradient(0deg, #252728, #252728), #252728;
+    border-width: 0px 1px 1px 0px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+.contact_number {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+    width: 100%;
+    margin: 0;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.contact_name {
+    max-width: 402px;
+    text-align: left;
+    gap: 10px;
+}
+
+.contact_phone {
+    max-width: 402px;
+    text-align: left;
+    gap: 10px;
+}
+
+.contact_number_val,
+.contact_name_val,
+.contact_phone_val {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+/* nodata */
+.nodata{
+    width: 100%;
+    position: relative;
+    padding-top: 64px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    opacity: 0;
+    
+}
+.nodata-img{
+    position: absolute;
+    left: 0;
+    top: -271px;
+}

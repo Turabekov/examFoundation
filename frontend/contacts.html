@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Contacts</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <!-- Login side of page -->
+            <div class="right_side">
+                <form class="login_form">
+                    <h2 class="login_title">Enter your details</h2>
+                    <div class="login-input_body">
+                        <p class="login-input_title">Email</p>
+                        <input id="email" class="login-input login-input_email" type="email"
+                            placeholder="rakhmanova.m12@gmail.com">
+                    </div>
+                    <div class="login-input_body password-container">
+                        <p class="login-input_title">Password</p>
+                        <input id="password" class="login-input login-input_password" type="password"
+                            placeholder="**************">
+                        <i class="fa-solid fa-eye fa-eye-slash" id="eye" style="width: 24px; height: 24px;"></i>
+                    </div>
+                    <button class="login_btn" type="submit">Sign in</button>
+                </form>
+
+                <form class="login_form contacts_form">
+                    <h2 class="login_title">Enter details of new contact</h2>
+                    <div class="login-input_body">
+                        <p class="login-input_title">Name</p>
+                        <input id="name" class="login-input login-input_name" type="text" placeholder="Name Surname">
+                    </div>
+                    <div class="login-input_body password-container">
+                        <p class="login-input_title">Phone number</p>
+                        <label class="phone_code" for="phone">UZ(+998)</label>
+                        <input id="phone" class="login-input login-input_phone" type="tel"
+                            placeholder="_ _ _  _ _  _ _">
+                    </div>
+                    <button class="login_btn" id="contact_btn" type="submit">Add contact</button>
+                    <p class="clearInputs">Clear fields?</p>
+                </form>
+                <div class="ellipse-2 ellipse"></div>
+            </div>
+
+            <div class="left_side">
+                <!-- contact content  -->
+                <div class="contacts">
+                    <div class="ellipse-3 ellipse"></div>
+                    <div class="contacts_inner">
+                        <div class="contact_owner">
+                            <h2 class="owner_name"></h2>
+                        </div>
+                        <table id="table" class="contacts_table">
+                            
+                        </table>
+                    </div>
+                </div>
+
+                <!-- if data not -->
+                <div class="nodata">
+                    <div class="ellipse-3 ellipse"></div>
+                    <img class="nodata-img" src="/./img/right side.png" alt="nodata">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/contacts.js"></script>
+</body>
+
+</html>
